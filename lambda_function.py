@@ -4,6 +4,10 @@ import json
 import datetime
 
 
+# An Environment Variable must be defined:
+# AWS_PROFILE = <name of the profile you need to point to>
+# The profile configurations are defined in the .aws/credentials file.
+
 # EC2 resource object oriented API
 # https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/ec2/service-resource/index.html
 ec2 = boto3.resource('ec2')
